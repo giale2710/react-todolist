@@ -1,0 +1,38 @@
+.pagination--container {
+    position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+.pagination--hr {
+    border-top: 3px solid #000;
+    width: 100%;
+    position: absolute;
+    margin: 5px 0px;
+    left: 0;
+    bottom: 40px;
+}
+
+.page--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    /* padding-bottom: 13px; */
+}
+
+.page--container button {
+    border: 0px;
+    background-color: transparent;
+    align-self: auto;
+    font-weight: normal;
+    padding: 0px 20px;
+    
+}
+
+.page--container button:hover {
+    color: red;
+    font-weight: bolder;
+
+}

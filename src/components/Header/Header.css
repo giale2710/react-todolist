@@ -1,0 +1,45 @@
+.header--container {
+    padding: 10px;
+    /* text-align: center; */
+    position: relative;
+    
+}
+
+.header--title {
+    font-size: 20px;
+    
+}
+
+.header--lower {
+    padding: 0px;
+    margin: 20px 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--input {
+    display: inline-block;
+    border: 3px solid rgb(129, 200, 255);
+    border-radius: 8px;
+    height: 45px;
+    width: 87%;
+    margin-left: 5px;
+    text-indent: 5px;
+}
+
+.header--submit {
+    height: 45px;
+    width: 45px;
+    border: 3px solid #000;
+    border-radius: 100%;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.header--hr {
+    border-top: 3px solid #000;
+    width: 100%;
+    position: absolute;
+    margin: 5px 0px;
+    left: 0;
+}

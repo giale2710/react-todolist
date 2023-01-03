@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import TaskList from './components/TaskList';
+import Pagination from './components/Pagination'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='div--container'>
+      <Header />
+
+        <TaskList
+       name='Wake up'
+       markedDone={false}
+       />
+        <TaskList
+       name='Commute'
+       markedDone={false}
+       />
+        <TaskList
+       name='Working'
+       markedDone={false}
+       />
+        <TaskList
+       name='Meeting with clients'
+       markedDone={false}
+       />
+        <TaskList
+       name='Lunch Break'
+       markedDone={false}
+       />
+        <TaskList
+       name='Afternoon Shift'
+       markedDone={false}
+       />
+        <TaskList
+       name='Go home'
+       markedDone={true}
+       />
+
+      <Pagination/>
+      </div>
     </div>
   );
 }
