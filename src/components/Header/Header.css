@@ -27,6 +27,10 @@
     text-indent: 5px;
 }
 
+.header--input:hover {
+    background-color: #ddd;
+}
+
 .header--submit {
     height: 45px;
     width: 45px;
@@ -34,6 +38,11 @@
     border-radius: 100%;
     font-size: 25px;
     font-weight: 900;
+}
+
+.header--submit:hover {
+    background-color: #222;
+    color: #fff;
 }
 
 .header--hr {

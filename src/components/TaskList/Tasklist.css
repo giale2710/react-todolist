@@ -7,7 +7,7 @@
     border-bottom: 15px;
 }
 
-.tasklist--task {
+.tasklist--tasktitle {
     margin: 20px 12px;
     font-size: 12px;
     font-weight: bold;
@@ -17,9 +17,16 @@
     color: rgb(89, 190, 89);
 }
 
-.tasklist--taskcontainer {
+.tasklist--task {
     display: flex;
     justify-content: space-between;
+}
+
+.tasklist--task:hover {
+    color: red;
+    background-color: #ddd;
+    border: 0px;
+    border-radius: 10px;
 }
 
 .tasklist--buttons button {

@@ -15,11 +15,11 @@ export default function TaskList(props) {
     
     return (
         isShown && <div className='tasklist--container'>
-        <div className='tasklist--taskcontainer'>
+        <div className='tasklist--task'>
             <div className=
                 {taskStatus ? 
-                "tasklist--task   green" : 
-                "tasklist--task"} 
+                "green  tasklist--tasktitle" : 
+                "tasklist--tasktitle"} 
                 >{props.name}</div>
             <div className='tasklist--buttons'>
                 {!taskStatus && <button className='button--markDone' onClick={toggleMarkedDone}> ✓ </button>}
