@@ -8,9 +8,9 @@ export default function Header(props) {
     setTaskData(e.target.value)
     console.log('changed task data: ',taskData)
   }
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { 
     e.preventDefault()
-    setTaskData(e.target.value)
+    e.target.reset()
     props.onSubmit(taskData)
     console.log('submitted task data: ',taskData)
   }
@@ -26,7 +26,6 @@ export default function Header(props) {
                         name='taskData'></input>
                 <button type='submit' 
                 className='header--submit'> + </button>
-            
         </form>
         <div>
         <hr className='header--hr'/>

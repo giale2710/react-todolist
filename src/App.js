@@ -20,6 +20,11 @@ function App() {
       <div className='div--container'>
         <Header onSubmit={handleClick}/>
         
+        <TaskList
+          key={999}
+          name='Eg: Wake up'
+          markedDone={false}
+       />
         {tasks.map((task,index) => (
         <TaskList
           key={index}
@@ -28,35 +33,6 @@ function App() {
           />
         ))}
         
-        <TaskList
-       name='Wake up'
-       markedDone={false}
-       />
-        <TaskList
-       name='Commute'
-       markedDone={false}
-       />
-        <TaskList
-       name='Working'
-       markedDone={false}
-       />
-        <TaskList
-       name='Meeting with clients'
-       markedDone={false}
-       />
-        <TaskList
-       name='Lunch Break'
-       markedDone={false}
-       />
-        <TaskList
-       name='Afternoon Shift'
-       markedDone={false}
-       />
-        <TaskList
-       name='Go home'
-       markedDone={false}
-       />
-  
       <Pagination/>
       </div>
     </div>
